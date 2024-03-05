@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --text-color: #1c1e53;
+    --hover-color: #5e3bee;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --bg-color: #deebee;
+    --icon-color: #006b6a; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color) !important;
+}
+
+
+
+/* Navigation Section */
+
+
+
+h5 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px var(--shadow);
+}
+
+nav .logo,
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a footer .logoa {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul,
+footer .top ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav button {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: #fff;
+}
+
+nav button#menuButton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+
+/* Main Section */
+
+
+.main {
+    background-color: var(--bg-color);
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .left h3 span {
+    color: var(--hover-color);
+}
+
+.main .left p {
+    color: var(--text-color);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main .left button {
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--hover-color);
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.main .right img {
+    width: 500px;
+}
+
+
+/* SKILLS SECTION */
+
+
+.skills {
+    padding: 110px 85px 0;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skill-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skill-items .item {
+    background-color: var(--bg-color);
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover {
+    border-color: var(--hover-color);
+}
+
+.skills .skill-items .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px var(--shadow);
+}
+.skills .skill-items .item .icon i{
+    font-size: 26px;
+    color: var(--icon-color);
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info .h4{
+    font-size: 18px;
+}
+
+.skills .skill-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+
+/* About Section */
+
+.about{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left{
+    background-color: var(--bg-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.about .left img{
+    width: 440px;
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}

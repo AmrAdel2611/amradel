@@ -162,7 +162,8 @@ nav button#menuButton {
 
 .skills h3,
 .about .right h3,
-.portfolio .header h3 {
+.portfolio .header h3,
+.contact .header h3 {
     font-size: 40px;
     margin-top: 20px;
 }
@@ -328,11 +329,44 @@ nav button#menuButton {
     font-size: 16px;
 }
 
+/* Contact Section */
+.contact {
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.contact .contact-items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 22px;
+}
+
+.contact .contact-items .c-item {
+    font-size: 18px;
+    background-color: var(--bg-color);
+    width: 40%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-items .c-item:hover {
+    border-color: var(--hover-color);
+}
 
 /* Footer Section */
 
 footer {
-    background-color: #fff;
+    background-color: var(--bg-color);
     padding: 85px;
     display: flex;
     flex-direction: column;
@@ -367,6 +401,55 @@ footer .bottom .links a {
     font-size: 12px;
     margin-left: 14px;
 }
+
+/* Contact Resposnive */
+
+@media screen and (max-width:1111px) {
+    .contact .contact-items {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .contact .contact-items {
+        gap: 18px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contact-items .c-item {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .contact .contact-items {
+        gap: 10px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contact-items .c-item {
+        padding: 15px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+}
+
+/* Contact Resposnive End */
+
 
 /* Responsive Design */
 
@@ -579,4 +662,4 @@ footer .bottom .links a {
 
 }
 
-
+/* Responsive Design End */
